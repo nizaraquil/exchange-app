@@ -9,3 +9,8 @@ The Money Exchange App is a simple web application that allows users to convert 
 - Currency conversion from one currency to another.
 - Input amount and select source and target currencies.
 - Display of conversion result, including the date.
+
+## Installing Libraries
+there is a a requirements.txt file that has all the libraries used.
+
+```pip install -r requirements.txt```
