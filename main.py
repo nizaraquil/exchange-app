@@ -2,11 +2,11 @@ import streamlit as st
 import requests
 import pandas as pd
 
+
 # Load currencies from the "currencies.csv" file using pandas
 currencies_df = pd.read_csv("currencies.csv")
 currency_options = currencies_df["Currency Name"].apply(
     lambda name: f"{name}").tolist()
-
 
 def main():
     st.title("Money Exchange App")
