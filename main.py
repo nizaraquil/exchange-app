@@ -30,7 +30,7 @@ def main():
             "from": currency1_code,
             "amount": amount,
         }
-        headers = {"apikey": "YWWnPlQ7n7cPFnsqBFmY0S5zAcnbyYCA"}
+        headers = {"apikey": "gbeCz1SyMapJ7oDXGOzZbxoCaY9ze02X"}
 
         try:
             response = requests.get(url, params=params, headers=headers)
