@@ -1,7 +1,11 @@
 import streamlit as st
+import os
 import requests
 import pandas as pd
 
+
+# Load Key
+API_KEY = os.environ.get(KEY)
 
 # Load currencies from the "currencies.csv" file using pandas
 currencies_df = pd.read_csv("currencies.csv")
@@ -30,7 +34,7 @@ def main():
             "from": currency1_code,
             "amount": amount,
         }
-        headers = {"apikey": "gbeCz1SyMapJ7oDXGOzZbxoCaY9ze02X"}
+        headers = {"apikey": API_KEY}
 
         try:
             response = requests.get(url, params=params, headers=headers)
