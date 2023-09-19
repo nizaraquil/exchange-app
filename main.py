@@ -5,7 +5,7 @@ import pandas as pd
 
 
 # Load Key
-API_KEY = os.environ.get(KEY)
+API_KEY = os.environ.get("KEY")
 
 # Load currencies from the "currencies.csv" file using pandas
 currencies_df = pd.read_csv("currencies.csv")
