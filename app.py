@@ -68,7 +68,7 @@ def main():
     with crypto_tab:
         st.info("Cryptocurrencies will get added in the next update :)")
 
-        crypto_amount = st.number_input("Crypto Amount", 0.000)
+        crypto_amount = st.number_input("Crypto Amount", 0.00000)
 
         crypto_options = converter.crypto_df["Crypto Name"].tolist()
 
