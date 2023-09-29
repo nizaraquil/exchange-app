@@ -7,7 +7,7 @@ class Convert:
     def __init__(self):
         self.currencies_df = pd.read_csv("currencies.csv")
         self.crypto_df = pd.read_csv("cryptocurrencies.csv")
-        self.url = "https://api.exchangerate.host/convert"
+        self.url = "https://api.apilayer.com/fixer/convert"
 
     def convert(self, amount, from_currency, to_currency, dataframe, code_column):
         params = {"from": from_currency, "to": to_currency, "amount": amount, "access_key": "gbeCz1SyMapJ7oDXGOzZbxoCaY9ze02X"}
