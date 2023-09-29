@@ -10,9 +10,10 @@ class Convert:
         self.url = "https://api.apilayer.com/fixer/convert"
 
     def convert(self, amount, from_currency, to_currency, dataframe, code_column):
+        payload = {}
         params = {"from": from_currency, "to": to_currency, "amount": amount, "access_key": "gbeCz1SyMapJ7oDXGOzZbxoCaY9ze02X"}
         try:
-            response = requests.get(self.url, params=params)
+            response = requests.request("GET", self.url, params=params, data=payload)
             response.raise_for_status()
             data = response.json()
             if "error" in data:
