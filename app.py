@@ -10,7 +10,7 @@ class Convert:
         self.url = "https://api.exchangerate.host/convert"
 
     def convert(self, amount, from_currency, to_currency, dataframe, code_column):
-        params = {"from": from_currency, "to": to_currency, "amount": amount}
+        params = {"from": from_currency, "to": to_currency, "amount": amount, "api_key": "gbeCz1SyMapJ7oDXGOzZbxoCaY9ze02X"}
         try:
             response = requests.get(self.url, params=params)
             response.raise_for_status()
